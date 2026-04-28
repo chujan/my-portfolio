@@ -531,43 +531,41 @@
 
 @media (max-width: 768px) {
 
+  /* REMOVE GLOBAL LEFT PUSH */
+  body {
+    overflow-x: hidden;
+  }
+
+  .hero-content {
+    margin-left: 0;
+    padding: 0 20px;
+  }
+
   .navbar {
     padding: 15px 20px;
   }
 
-  .hero-content {
-    margin-left: 0;   
-    padding: 0 20px;
+  .journey-section,
+  .skills-section,
+  .about-section,
+  .contact-section {
+    padding: 60px 20px;
   }
 
-  .hero {
-    justify-content: center;
-  }
-
+  /* JOURNEY STACK FIX */
   .journey-grid {
     display: flex;
-    flex-direction: column; /* 👈 STACK vertically */
+    flex-direction: column;
     gap: 50px;
   }
 
-  /* Education first, Experience second */
-  .journey-col:nth-child(1) {
+  /* EXPERIENCE FIRST */
+  .journey-col:nth-child(2) {
     order: 1;
   }
 
-  .journey-col:nth-child(2) {
+  .journey-col:nth-child(1) {
     order: 2;
   }
 
-  /* remove horizontal scroll behavior */
-  .skills-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-  }
-
-  .journey-col,
-  .skills-col {
-    min-width: 100%;
-  }
 }
