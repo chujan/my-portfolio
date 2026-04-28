@@ -524,29 +524,14 @@
  html {
   scroll-behavior: smooth;
 }
+.timeline,
+.skills-card {
+  width: 100%;
+}
+
 @media (max-width: 768px) {
-  .navbar {
-    padding: 15px 20px;
-  }
-
-  .hero-content {
-    margin-left: 20px;
-  }
-
-  .hero-content h1 {
-    font-size: 36px;
-  }
-
-  .role {
-    font-size: 22px;
-  }
-
   .journey-grid,
   .skills-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .contact-row {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
