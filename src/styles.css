@@ -530,13 +530,13 @@
 }
 
 @media (max-width: 768px) {
-  /* FIX GLOBAL LEFT SPACING */
+
   .navbar {
     padding: 15px 20px;
   }
 
   .hero-content {
-    margin-left: 0;   /* 🔥 removes big left push */
+    margin-left: 0;   
     padding: 0 20px;
   }
 
@@ -544,23 +544,30 @@
     justify-content: center;
   }
 
-  /* SECTIONS ALIGN PROPERLY */
-  .journey-section,
-  .skills-section,
-  .about-section,
-  .contact-section {
-    padding: 60px 20px; /* reduce huge desktop padding */
+  .journey-grid {
+    display: flex;
+    flex-direction: column; /* 👈 STACK vertically */
+    gap: 50px;
   }
 
-  /* GRID FIX */
-  .journey-grid,
+  /* Education first, Experience second */
+  .journey-col:nth-child(1) {
+    order: 1;
+  }
+
+  .journey-col:nth-child(2) {
+    order: 2;
+  }
+
+  /* remove horizontal scroll behavior */
   .skills-grid {
-    width: 100%;
-    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
   }
 
-  /* REMOVE ANY HORIZONTAL SHIFTING */
-  body {
-    overflow-x: hidden;
+  .journey-col,
+  .skills-col {
+    min-width: 100%;
   }
 }
