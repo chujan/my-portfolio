@@ -531,32 +531,14 @@
 
 @media (max-width: 768px) {
 
-  /* REMOVE GLOBAL LEFT PUSH */
-  body {
-    overflow-x: hidden;
-  }
-
-  .hero-content {
-    margin-left: 0;
-    padding: 0 20px;
-  }
-
-  .navbar {
-    padding: 15px 20px;
-  }
-
-  .journey-section,
-  .skills-section,
-  .about-section,
-  .contact-section {
-    padding: 60px 20px;
-  }
-
-  /* JOURNEY STACK FIX */
   .journey-grid {
-    display: flex;
-    flex-direction: column;
+    display: flex !important;
+    flex-direction: column !important;
     gap: 50px;
+  }
+
+  .journey-col {
+    width: 100% !important;
   }
 
   /* EXPERIENCE FIRST */
@@ -564,8 +546,8 @@
     order: 1;
   }
 
+  /* EDUCATION BELOW */
   .journey-col:nth-child(1) {
     order: 2;
   }
-
 }
