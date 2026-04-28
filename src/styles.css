@@ -530,30 +530,37 @@
 }
 
 @media (max-width: 768px) {
-  .journey-grid {
-    display: flex;
-    flex-direction: column; /* 👈 STACK vertically */
-    gap: 50px;
+  /* FIX GLOBAL LEFT SPACING */
+  .navbar {
+    padding: 15px 20px;
   }
 
-  /* Education first, Experience second */
-  .journey-col:nth-child(1) {
-    order: 1;
+  .hero-content {
+    margin-left: 0;   /* 🔥 removes big left push */
+    padding: 0 20px;
   }
 
-  .journey-col:nth-child(2) {
-    order: 2;
+  .hero {
+    justify-content: center;
   }
 
-  /* remove horizontal scroll behavior */
+  /* SECTIONS ALIGN PROPERLY */
+  .journey-section,
+  .skills-section,
+  .about-section,
+  .contact-section {
+    padding: 60px 20px; /* reduce huge desktop padding */
+  }
+
+  /* GRID FIX */
+  .journey-grid,
   .skills-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+    width: 100%;
+    max-width: 100%;
   }
 
-  .journey-col,
-  .skills-col {
-    min-width: 100%;
+  /* REMOVE ANY HORIZONTAL SHIFTING */
+  body {
+    overflow-x: hidden;
   }
 }
