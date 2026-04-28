@@ -530,15 +530,30 @@
 }
 
 @media (max-width: 768px) {
-  .journey-grid,
+  .journey-grid {
+    display: flex;
+    flex-direction: column; /* 👈 STACK vertically */
+    gap: 50px;
+  }
+
+  /* Education first, Experience second */
+  .journey-col:nth-child(1) {
+    order: 1;
+  }
+
+  .journey-col:nth-child(2) {
+    order: 2;
+  }
+
+  /* remove horizontal scroll behavior */
   .skills-grid {
     display: flex;
-    overflow-x: auto;
-    gap: 20px;
+    flex-direction: column;
+    gap: 30px;
   }
 
   .journey-col,
   .skills-col {
-    min-width: 85%;
+    min-width: 100%;
   }
 }
