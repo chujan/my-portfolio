@@ -532,6 +532,13 @@
 @media (max-width: 768px) {
   .journey-grid,
   .skills-grid {
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+  }
+
+  .journey-col,
+  .skills-col {
+    min-width: 85%;
   }
 }
