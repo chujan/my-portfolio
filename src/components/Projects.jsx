@@ -8,7 +8,7 @@ const projects = [
     image: flashypay,
     desc: "A mobile wallet built for FXSwap enabling seamless digital payments and foreign exchange transactions for real users.",
     tags: ["React Native", "Firebase", "FinTech"],
-    github: "https://github.com/chujan",
+    github: "https://github.com/chujan/FLashPay",
     live: "https://www.linkedin.com/feed/update/urn:li:activity:7240835546334265346/",
   },
   {
@@ -16,7 +16,7 @@ const projects = [
     image: simpliride,
     desc: "A rider booking app with Google Maps integration for real-time location tracking and seamless ride booking experiences.",
     tags: ["React Native", "Google Maps", "Firebase"],
-    github: "https://github.com/chujan",
+    github: "https://github.com/chujan/simplified-rider-app",
     live: "#",
   },
   {
@@ -24,7 +24,7 @@ const projects = [
     image: studyvault,
     desc: "An all-in-one student app for African students featuring past questions, brain games and skill learning modules.",
     tags: ["React Native", "Firebase", "EdTech"],
-    github: "https://github.com/chujan",
+    github: "https://github.com/chujan/Studyvault",
     live: "https://www.linkedin.com/feed/update/urn:li:activity:7424160736462958592/",
   },
 ];
