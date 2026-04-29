@@ -19,6 +19,7 @@ export default function Navbar() {
         <a href="#" onClick={() => scrollTo("journey")}>Education</a>
         <a href="#" onClick={() => scrollTo("skills")}>Skills</a>
         <a href="#" onClick={() => scrollTo("contact")}>Contact</a>
+        <a href="#" onClick={() => scrollTo("projects")}>Projects</a>
       </div>
 
       {/* Hamburger icon */}
