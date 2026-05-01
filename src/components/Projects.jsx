@@ -6,11 +6,12 @@ const projects = [
   {
     title: "FlashyPay",
     image: flashypay,
-    desc: "A mobile wallet built for FXSwap enabling seamless digital payments and foreign exchange transactions for real users.",
-    tags: ["React Native", "Firebase", "FinTech"],
-    github: "https://github.com/chujan/FLashPay",
+    desc: "A mobile wallet built for FXSwap, enabling seamless digital payments and foreign exchange transactions for real users.",
+    tags: ["Swift", "Firebase", "FinTech"],
+    github: "https://github.com/chujan/FlashPay",
     live: "https://www.linkedin.com/feed/update/urn:li:activity:7240835546334265346/",
   },
+
   {
     title: "SimpliRide",
     image: simpliride,
